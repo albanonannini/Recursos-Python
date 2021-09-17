@@ -43,7 +43,7 @@ for i in range(N):
     down_points.append(y[i] - error[i] - m*x[i])
     upper_points.append(y[i] + error[i] - m*x[i])
 
-delta_h = (max(upper_points)-min(upper_points))/2
+delta_h = (max(upper_points)-min(down_points))/2
 delta_m = 2*delta_h/delta_x
 
 print('h = ',h,' pm ', delta_h,'; m = ', m,' pm ', delta_m,'; R = ', R)
